@@ -1,0 +1,9 @@
+export FLASK_ENV=development
+export FLASK_APP=src
+export SQLALCHEMY_DB_URI=sqlite:///bookmarks.db
+export JWT_SECRET_KEY = "JWT_SECRET_KEY"
+export MAIL_SERVER = "smtp.gmail.com"
+export MAIL_PORT = 465
+export MAIL_USERNAME = 'eftelyasert@gmail.com'
+export MAIL_USE_TLS = False
+export MAIL_USE_SSL = True

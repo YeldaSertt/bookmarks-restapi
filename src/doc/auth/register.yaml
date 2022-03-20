@@ -1,0 +1,34 @@
+User Registration
+---
+tags:
+  - Authentication
+parameters:
+  - name: body
+    description: Bu alan register olmaya yardımcı
+    in : body
+    required : true
+    schema:
+      type: object
+      required:
+        - "email"
+        - "password"
+        - "username"
+      properties:
+        email:
+          type : "string"
+          example : "user@gmail.com"
+
+        password:
+          type: "string"
+          format: password
+          example: "********"
+        username:
+          type: "string"
+          example: "usernamex"
+
+responses:
+  201:
+    description: When a user successfully logs in
+
+  400:
+    description: Fails to Register due to bad request data
